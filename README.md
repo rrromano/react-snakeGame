@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+# React - Snake Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_This is a reactJs project that renders a snake retro game. You can select the level, play, stop if you need and restart the game when you want._
 
-## Available Scripts
+## Starting ▶️
 
-In the project directory, you can run:
+The following instructions will allow you to get a working copy of the project on your local machine for development and testing purposes.
 
-### `npm start`
+### Installation ⚙️
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   Run `npm install` to install all dependencies.
+-   Run `npm start` to run the app locally.
+-   You can find the project running on `localhost:3000`.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Testing 🧪
 
-### `npm test`
+-   Run `npm test` to execute automated tests.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Deployment 🚀
 
-### `npm run build`
+-   Run `npm run build` to generate a ready-to-deploy version.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Libraries used 🛠️
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   Typescript: For handling data types.
+-   Styled-components: For handling styles.
+-   Material-Ui: For some UI components.
+-   Redux-Toolkit: For state management.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## General considerations 📖
 
-### `npm run eject`
+### Board Component
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-   It Is the main component, that render the board wich contain the snake and food. It is a matrix for an X size define in file constants.ts.
+-   The board is done with display grid, and so many rows and columns by the size of the board.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Row Component
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+-   It Is the component for each row defined by the size of the board.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Cell Component
 
-## Learn More
+-   It Is the component for each cell defined in a row, according to the size of the board.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Options Component
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   It Is the component for select the level of the game, and play, stop and restart the game when you want.
+
+### Score Component
+
+-   It Is the component to show the actual/last score, and the high score (storaged in local-storage of browser).
+
+### CustomSwitch Component
+
+-   It Is the component that render a switch control for change the main theme between ligth and dark mode.
+
+### SnackBarInfo Component
+
+-   It Is the component that displays a sign when you get a new highscore or when start the game to indicate some instrucctions to move the snake.
+
+### General Info
+
+-   First of all, you can select between three levels Easy, Middle and Hard. When you decide the level, you can press the Play button for start the game. At any time you can stop the game and then return with the same or also restart the game.
+-   When you are playing, you cant change the level until the end of the game.
+-   At any time, you can press the switch control for change the main theme between ligth and dark mode.
+-   The view of the complete game adapt to different screen resolutions.
+-   **`GOOD LUCK AND ENJOY!`**
+
+## Author ✒️
+
+-   Romano, Rodrigo Ruben - Information systems engineer.
+
+## Contact 📋
+
+-   [LinkedIn](https://www.linkedin.com/in/rodrigo-ruben-romano/)
+-   [Mail](mailto:romano.rodrigo19@gmail.com)
